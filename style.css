@@ -9,6 +9,10 @@
     background: rgb(128, 191, 233);
 }
 
+/* --------------------------------------------------------------- */
+/* -------------------- Navigation Part Below -------------------- */
+/* --------------------------------------------------------------- */
+
 nav {
     user-select: none;
 }
@@ -20,9 +24,9 @@ nav {
     font-size: 16px !important;
 }
 
-/* ---------------------------------------------------------------------- */
-/* --------------------- Bannar Part Below ------------------------------ */
-/* ---------------------------------------------------------------------- */
+/* --------------------------------------------------------------- */
+/* --------------------- Bannar Part Below ----------------------- */
+/* --------------------------------------------------------------- */
 
 .brand-heading::selection,
 .intro-text::selection {
@@ -38,7 +42,7 @@ nav {
     padding: 100px 0 100px 0;
     text-align: center;
     color: #fff;
-    background-image: radial-gradient(circle at 50% 50%, rgba(0, 0, 0, 0.46), rgba(0, 0, 0, 0.88)), url('http://unsplash.it/1600/1400?random=9') !important;
+    background-image: radial-gradient(circle at 50% 50%, rgba(0, 0, 0, 0.46), rgba(0, 0, 0, 0.88)), url('http://unsplash.it/1600/1400?random=9'), url(./images/portfolio-offline-bg.jpg) !important;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -163,9 +167,62 @@ nav {
     }
 }
 
-/* ---------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+/* --------------------- Contact Part Below ---------------------------- */
+/* --------------------------------------------------------------------- */
+
+.contact-form {
+    box-shadow: 0 0 2px #fff;
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    width: 300px;
+}
+
+.contact-form legend {
+    cursor: default;
+}
+
+.contact-form legend span:hover {
+    color: rgba(0, 255, 255, 0.575);
+}
+
+.contact-form input, .contact-form textarea {
+    outline: none;
+    border: none;
+    box-shadow: 0 1px 1px rgba(0, 255, 255, 0.575);
+    padding: 5px 10px;
+    background: rgba(0, 0, 0, 0.46);
+    color: #fff;
+    font-size: 16px;
+    border-radius: 5px;
+}
+.contact-form input {
+    height: 40px;
+}
+.contact-form input::placeholder, .contact-form textarea::placeholder {
+    color: #7d7d7d;
+}
+
+.contact-form button {
+    background: rgba(0, 255, 255, 0.255);
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    width: 80px;
+    padding: 5px 15px;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: #fff;
+}
+.contact-form button:hover {
+    background: rgba(0, 255, 255, 0.575);
+}
+
+/* --------------------------------------------------------------------- */
 /* --------------------- Footer Part Below ----------------------------- */
-/* ---------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
 
 .socials li {
     position: relative;
@@ -215,33 +272,11 @@ nav {
     color: aqua;
 }
 
-/* footer {
-    user-select: none;
-} */
-/* footer img {
-    width: 30px;
-    margin: 0 2px;
-    cursor: pointer;
-    transition: 0.4s;
+.personal p {
+    padding: 0 !important;
+    margin: 0 !important;
+    font-size: 16px;
 }
-footer img:nth-child(4) {
-    width: 40px;
+.personal p i {
+    margin-right: 5px;
 }
-
-footer .social-links a {
-    margin: 2px;
-    padding: 5px 5px 5px;
-    text-decoration: none;
-    height: 40px;
-    width: 40px;
-    background: #fff;
-    text-align: center;
-    line-height: 0;
-}
-
-footer .social-links a:nth-child(4) {
-    color: rgb(31, 131, 0);
-}
-footer .social-links a i {
-    font-size: 30px;
-} */
