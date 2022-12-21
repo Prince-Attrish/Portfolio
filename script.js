@@ -11,7 +11,7 @@ window.addEventListener('scroll', function(){
 
 var docTitle = document.title;
 window.addEventListener("blur", () => {
-    document.title = "Prince ~ See ya!";
+    document.title = "Prince ~ See ya! 👋";
 })
 window.addEventListener("focus", () => {
     document.title = docTitle;
