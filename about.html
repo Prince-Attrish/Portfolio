@@ -49,7 +49,7 @@
     </nav>
 
     <!-------------------------- Banner -------------------------->
-    <section class="intro">
+    <section class="intro about">
         <div class="intro-body">
             <div class="container">
                 <div class="row">
@@ -58,33 +58,49 @@
                             Hello There!
                         </p>
                         <h1 class="brand-heading">
-                            <span>T</span><span>H</span><span>I</span><span>S </span><span>I</span><span>S </span><span>P</span><span>R</span><span>I</span><span>N</span><span>C</span><span>E</span>
+                            <span>T</span><span>H</span><span>I</span><span>S </span><span>I</span><span>S </span><span>A</span><span>B</span><span>O</span><span>U</span><span>T</span>
                         </h1>
                         <p class="intro-text">
                             Glad To See You Here ;)
                         </p>
-                        <a href="#hello" class="btn btn-circle page-scroll">
-                            <i class="fa fa-angle-double-down animated"></i>
-                        </a>
+                        <a href="documents/Resume.pdf" download="Prince CV" class="btn btn-info mybtn text-white mt-3 fs-4">Download CV</a>
+                        <a onclick="location.href='documents/Resume.pdf';" class="btn btn-info mybtn text-white mt-3 ms-sm-1 ms-md-4 fs-4">Watch Online</a>
+                        <span class="d-block pt-2 m-0 text-light form-text">Looking for Something else? <span onclick="location.href='contact.html';" role="button" class="text-info">Contact Me</span> </span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="p-3" id="hello">
-        <div class="heading d-flex justify-content-center">
-            <h2 class="">About</h2>
-        </div>
-        <div class="content">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima error voluptates tempora aut vero
-                dolores, et explicabo? Perferendis est numquam consequatur quaerat officia non distinctio neque veniam!
-                Dolores, ab quisquam?</p>
+    <!------------------------- Skills --------------------------->
+
+    <section class="p-3 about">
+        <h2 class="my-3 text-center"><span class="myheading p-2">Skills</span></h2>
+        <div class="text-center d-flex gap-5 flex-wrap align-items-end justify-content-center mt-5">
+            <div class="skill" onclick="location.href='documents/Java-Certificate.pdf';">
+                <img src="images/Java.png" width="100px" title="java">
+                <p>Java</p>
+            </div>
+            <div class="skill" onclick="location.href='documents/Html-Certificate.pdf';">
+                <img src="images/html5.png" width="100px" title="HTML">
+                <p>HTML</p>
+            </div>
+            <div class="skill" onclick="location.href='documents/css.pdf';">
+                <img src="images/Css3.png" width="100px" title="CSS">
+                <p>CSS</p>
+            </div>
+            <div class="skill" onclick="alert('Currently No Certificate Avaliable. Sorry... 😭');">
+                <img src="images/Js.png" width="100px" title="JavaScript">
+                <p>JavaScript</p>
+            </div>
+            <div class="skill" onclick="alert('Currently No Certificate Avaliable. Sorry... 😭');">
+                <img src="images/Bootstrap5.png" width="130px" title="Bootstrap">
+                <p>Bootstrap</p>
+            </div>
         </div>
     </section>
 
-
-    <!-- ---------------------- Footer --------------------------->
+    <!------------------------- Footer --------------------------->
     <footer class="bg-dark pt-4 text-white">
         <div class="d-flex align-items-center justify-content-center flex-column text-center">
             <h3 class="fs-4 fw-normal lh-5">Thank You!</h3>

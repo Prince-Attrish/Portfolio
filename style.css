@@ -4,6 +4,13 @@
     box-sizing: border-box;
 }
 
+body {
+    /* background: url(images/bg-fixed.jpg) no-repeat center/cover;
+    background-attachment: fixed;
+    color: #fff !important; */
+    background: #ccc;
+}
+
 ::selection {
     color: #fff;
     background: rgb(128, 191, 233);
@@ -48,7 +55,7 @@ nav {
     padding: 100px 0 100px 0;
     text-align: center;
     color: #fff;
-    background-image: radial-gradient(circle at 50% 50%, rgba(0, 0, 0, 0.46), rgba(0, 0, 0, 0.88)), url('http://unsplash.it/1600/1400?random=9'), url(./images/portfolio-offline-bg.jpg) !important;
+    background-image: radial-gradient(circle at 50% 50%, rgba(0, 0, 0, 0.46), rgba(0, 0, 0, 0.88)), url('http://unsplash.it/1600/1400?random=9'), url(./images/load-bg.jpg) !important;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -174,7 +181,36 @@ nav {
 }
 
 /* --------------------------------------------------------------------- */
-/* --------------------- Contact Part Below ---------------------------- */
+/* ---------------------- About Page Below ----------------------------- */
+/* --------------------------------------------------------------------- */
+
+.about {
+    background: #bbb;
+}
+
+.about .mybtn {
+    background: rgba(0, 255, 255, 0.255);
+}
+
+.about .skill img {
+    transition: 0.3s;
+}
+
+.about .skill:hover img {
+    transform: scale(0.9) translateY(-10px);
+}
+
+
+.myheading {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    border-radius: 62% 38% 64% 36% / 48% 50% 50% 52% ;
+    background: linear-gradient(120deg,blue, orangered 2%, blue);
+}
+
+/* --------------------------------------------------------------------- */
+/* --------------------- Contact Page Below ---------------------------- */
 /* --------------------------------------------------------------------- */
 
 .contact-form {
