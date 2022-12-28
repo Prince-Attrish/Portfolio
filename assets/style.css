@@ -35,17 +35,32 @@ nav {
 /* --------------------- Bannar Part Below ----------------------- */
 /* --------------------------------------------------------------- */
 
-.brand-heading span::selection,
+.home .mybtn {
+    background: rgba(0, 255, 255, 0.255);
+    width: 170px;
+}
+
+.brand-heading::selection,
 .intro-text::selection {
 	text-shadow:none !important;
+	background:#fcfcfc !important;
+	background:rgba(255,255,255,.2) !important;
+}
+.brand-heading span::selection,
+.intro-text span::selection {
+    color: cyan;
+    text-shadow:none !important;
 	background:#fcfcfc !important;
 	background:rgba(255,255,255,.2) !important;
 }
 .brand-heading {
     cursor: pointer;
 }
-.brand-heading span:hover {
+.brand-heading span {
     color: rgba(0, 255, 255, 0.575);
+}
+.brand-heading span:hover {
+    color: rgba(0, 255, 255);
 }
 
 .intro {
@@ -75,6 +90,9 @@ nav {
 .intro .intro-body .intro-text {
     font-size: 18px;
 }
+.intro .intro-body .intro-text span {
+    color: rgba(0, 255, 255, 0.575);
+} 
 
 @media(min-width:768px) {
     .intro {
@@ -184,19 +202,15 @@ nav {
 /* ---------------------- About Page Below ----------------------------- */
 /* --------------------------------------------------------------------- */
 
-.about {
+.skills {
     background: #bbb;
 }
 
-.about .mybtn {
-    background: rgba(0, 255, 255, 0.255);
-}
-
-.about .skill img {
+.skills .skill img {
     transition: 0.3s;
 }
 
-.about .skill:hover img {
+.skills .skill:hover img {
     transform: scale(0.9) translateY(-10px);
 }
 
@@ -207,6 +221,7 @@ nav {
     color: rgb(255, 255, 255);
     border-radius: 62% 38% 64% 36% / 48% 50% 50% 52% ;
     background: linear-gradient(120deg,blue, orangered 2%, blue);
+    user-select: none;
 }
 
 /* --------------------------------------------------------------------- */
@@ -271,7 +286,7 @@ nav {
     padding: 18px;
     border-radius: 100%;
     border: 1px solid;
-    animation: animatedborder 20s linear infinite;
+    animation: animatedborder 10s linear infinite;
 }
 
 @keyframes animatedborder {
@@ -301,6 +316,7 @@ nav {
 }
 .socials a:hover li {
     box-shadow: 0 0 7px #fff;
+    background: rgba(255,255,255,.2);
 }
 .socials a i {
     position: absolute;

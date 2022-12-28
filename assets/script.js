@@ -1,5 +1,5 @@
 var nav = document.querySelector('nav');
-window.addEventListener('scroll', function(){
+window.addEventListener('scroll', function () {
     if (window.pageYOffset > 50) {
         nav.classList.add('bg-dark', 'shadow')
     } else {
@@ -16,3 +16,10 @@ window.addEventListener("blur", () => {
 window.addEventListener("focus", () => {
     document.title = docTitle;
 })
+
+var typed = new Typed(".typing", {
+    strings: ["Student", "Developer", "Fresher"],
+    typeSpeed: 100,
+    backSpeed: 60,
+    loop: true
+});
