@@ -30,6 +30,9 @@ nav {
 .navbar-toggler .navbar-toggler-icon {
     font-size: 16px !important;
 }
+nav a:hover{
+    color: cyan !important;
+}
 
 /* --------------------------------------------------------------- */
 /* --------------------- Home Part Below ----------------------- */
