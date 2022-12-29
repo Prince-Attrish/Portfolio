@@ -88,23 +88,23 @@
     <section class="p-3 skills" id="skills">
         <h2 class="my-3 text-center"><span class="myheading p-2">Skills</span></h2>
         <div class="text-center d-flex gap-5 flex-wrap align-items-end justify-content-center mt-5">
-            <div class="skill" onclick="location.href='documents/Java-Certificate.pdf';">
+            <div class="skill" onclick="javaCert();">
                 <img src="images/Java.png" width="100px" title="java">
                 <p>Java</p>
             </div>
-            <div class="skill" onclick="location.href='documents/Html-Certificate.pdf';">
+            <div class="skill" onclick="htmlCert();">
                 <img src="images/html5.png" width="100px" title="HTML">
                 <p>HTML</p>
             </div>
-            <div class="skill" onclick="location.href='documents/css.pdf';">
+            <div class="skill" onclick="cssCert();">
                 <img src="images/Css3.png" width="100px" title="CSS">
                 <p>CSS</p>
             </div>
-            <div class="skill" onclick="alert('Currently No Certificate Avaliable. Sorry... 😭');">
+            <div class="skill" onclick="noCert();">
                 <img src="images/Js.png" width="100px" title="JavaScript">
                 <p>JavaScript</p>
             </div>
-            <div class="skill" onclick="alert('Currently No Certificate Avaliable. Sorry... 😭');">
+            <div class="skill" onclick="noCert();">
                 <img src="images/Bootstrap5.png" width="130px" title="Bootstrap">
                 <p>Bootstrap</p>
             </div>
@@ -114,25 +114,25 @@
     <!------------------------- Footer --------------------------->
     <footer class="bg-dark pt-4 text-white">
         <div class="d-flex align-items-center justify-content-center flex-column text-center">
-            <h3 class="fs-4 fw-normal lh-5">Thank You!</h3>
-            <p class="lh-4 w-75">Abhi socha nhi h ki yaha pr kya likhu 😅</p>
+            <h3 class="fs-3 fw-normal lh-5">Thank You!</h3>
 
-            <h5 class="fw-semibold mb-0 mt-2">Follow me on</h5>
+            <h5 class="fw-semibold mb-0 mt-2">Follow Me On</h5>
             <ul class="socials list-unstyled d-flex justify-content-center align-items-center mb-2">
-                <a href="https://www.linkedin.com/in/prince-sharma-3b3716227" target="_blank"><li><i class="fa-brands fa-linkedin-in"></i></li></a>
-                <a href="https://www.facebook.com/prince.attrish.5?mibextid=ZbWKwL" target="_blank"><li><i class="fa-brands fa-facebook-f"></i></li></a>
-                <a href="https://github.com/Prince-Attrish/" target="_blank"><li><i class="fa-brands fa-github"></i></li></a>
-                <a href="https://instagram.com/___prince_sharma?igshid=YmMyMTA2M2Y=" target="_blank"><li><i class="fa-brands fa-instagram"></i></li></a>
+                <a href="javascript: void();" onclick="linkedinLink();"><li><i class="fa-brands fa-linkedin-in"></i></li></a>
+                <a href="javascript: void();" onclick="facebookLink();"><li><i class="fa-brands fa-facebook-f"></i></li></a>
+                <a href="javascript: void();" onclick="githubLink();"><li><i class="fa-brands fa-github"></i></li></a>
+                <a href="javascript: void();" onclick="instaLink();"><li><i class="fa-brands fa-instagram"></i></li></a>
             </ul>
+            <h5 class="fw-semibold mb-0 mt-2">How To Reach Me</h5>
             <div class="personal d-flex flex-row gap-4 flex-wrap p-3">
-                <p><i class="fa-solid fa-envelope"></i>vs3031999@gmail.com</p>
-                <p><i class="fa-solid fa-phone"></i>+91 9910254105</p>
-                <p><i class="fa-solid fa-location-dot"></i>Greater Noida, UP, India</p>
+                <p onclick="mailto();" role="button"><i class="fa-solid fa-envelope"></i>vs3031999@gmail.com</p>
+                <p onclick="tel();" role="button"><i class="fa-solid fa-phone"></i>+91 9910254105</p>
+                <p onclick="myAlertMsg();" role="button"><i class="fa-solid fa-location-dot"></i>Greater Noida, UP, India</p>
             </div>
         </div>
         <hr class="text-white my-0">
         <div class="text-white p-1 mx-3">
-            <p class="mb-0 fw-normal text-center">Copyright &copy;2022 <span class="text-danger text-nowrap fw-semibold">Prince Sharma</span> | Designed by <span class="fw-semibold text-nowrap p-0"><a href="https://www.linkedin.com/in/prince-sharma-3b3716227" class="text-decoration-none" target="_blank">Prince Sharma</a></span></p>
+            <p class="mb-0 fw-normal text-center">Copyright &copy;2022 | Designed by <span class="fw-semibold text-nowrap p-0"><a href="https://www.linkedin.com/in/prince-sharma-3b3716227" class="text-decoration-none text-info" target="_blank">Prince Sharma</a></span></p>
         </div>
     </footer>
 
