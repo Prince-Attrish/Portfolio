@@ -4,13 +4,6 @@
     box-sizing: border-box;
 }
 
-body {
-    /* background: url(images/bg-fixed.jpg) no-repeat center/cover;
-    background-attachment: fixed;
-    color: #fff !important; */
-    background: #ccc;
-}
-
 ::selection {
     color: #fff;
     background: rgb(128, 191, 233);
@@ -23,14 +16,22 @@ body {
 nav {
     user-select: none;
 }
+
 .navbar-toggler {
     padding: 2px 5px !important;
     box-shadow: 0 0 0 #fff !important;
 }
+
 .navbar-toggler .navbar-toggler-icon {
     font-size: 16px !important;
 }
-nav a:hover{
+
+nav a {
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+nav a:hover:not(.navbar-brand) {
     color: cyan !important;
 }
 
@@ -46,23 +47,27 @@ nav a:hover{
 .home span::selection,
 .brand-heading::selection,
 .intro-text::selection {
-	text-shadow:none !important;
-	background:#fcfcfc !important;
-	background:rgba(255,255,255,.2) !important;
+    text-shadow: none !important;
+    background: #fcfcfc !important;
+    background: rgba(255, 255, 255, .2) !important;
 }
+
 .brand-heading span::selection,
 .intro-text span::selection {
     color: cyan;
-    text-shadow:none !important;
-	background:#fcfcfc !important;
-	background:rgba(255,255,255,.2) !important;
+    text-shadow: none !important;
+    background: #fcfcfc !important;
+    background: rgba(255, 255, 255, .2) !important;
 }
+
 .brand-heading {
     cursor: pointer;
 }
+
 .brand-heading span {
     color: rgba(0, 255, 255, 0.575);
 }
+
 .brand-heading span:hover {
     color: rgba(0, 255, 255);
 }
@@ -74,7 +79,7 @@ nav a:hover{
     padding: 100px 0 100px 0;
     text-align: center;
     color: #fff;
-    background-image: radial-gradient(circle at 50% 50%, rgba(0, 0, 0, 0.46), rgba(0, 0, 0, 0.88)), url('http://unsplash.it/1600/1400?random=9'), url(./images/load-bg.jpg) !important;
+    background-image: radial-gradient(circle at 50% 50%, rgba(0, 0, 0, 0.46), rgba(0, 0, 0, 0.88)), url('http://unsplash.it/1600/1400?random=9'), url(../images/load-bg.jpg) !important;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -94,9 +99,10 @@ nav a:hover{
 .intro .intro-body .intro-text {
     font-size: 18px;
 }
+
 .intro .intro-body .intro-text span {
     color: rgba(0, 255, 255, 0.575);
-} 
+}
 
 @media(min-width:768px) {
     .intro {
@@ -137,13 +143,16 @@ nav a:hover{
     animation-iteration-count: infinite;
     transition: background .3s ease-in-out, box-shadow 1s linear;
 }
+
 @keyframes animated-shadow {
     0% {
         box-shadow: 0 0px 3px #fff;
     }
+
     50% {
         box-shadow: 0px 0px 10px #fff;
     }
+
     100% {
         box-shadow: 0px 0 3px #fff;
     }
@@ -223,8 +232,8 @@ nav a:hover{
     letter-spacing: 2px;
     text-transform: uppercase;
     color: rgb(255, 255, 255);
-    border-radius: 62% 38% 64% 36% / 48% 50% 50% 52% ;
-    background: linear-gradient(120deg,blue, orangered 2%, blue);
+    border-radius: 62% 38% 64% 36% / 48% 50% 50% 52%;
+    background: linear-gradient(120deg, blue, orangered 2%, blue);
     user-select: none;
 }
 
@@ -248,7 +257,8 @@ nav a:hover{
     color: rgba(0, 255, 255, 0.575);
 }
 
-.contact-form input, .contact-form textarea {
+.contact-form input,
+.contact-form textarea {
     outline: none;
     border: none;
     box-shadow: 0 1px 1px rgba(0, 255, 255, 0.575);
@@ -258,25 +268,45 @@ nav a:hover{
     font-size: 16px;
     border-radius: 5px;
 }
+
 .contact-form input {
     height: 40px;
 }
-.contact-form input::placeholder, .contact-form textarea::placeholder {
+
+.contact-form textarea {
+    resize: none;
+}
+
+.contact-form input:hover,
+.contact-form textarea:hover {
+    box-shadow: 0 1px 1px rgb(0, 255, 76);
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
     color: #7d7d7d;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    box-shadow: 0 1px 1px red;
+}
+
+.contact-form input:valid,
+.contact-form textarea:valid {
+    box-shadow: 0 1px 1px rgb(0, 255, 76);
 }
 
 .contact-form button {
     background: rgba(0, 255, 255, 0.255);
     outline: none;
-    border: none;
     border-radius: 10px;
-    width: 80px;
     padding: 5px 15px;
     font-size: 20px;
-    font-weight: 500;
     letter-spacing: 1px;
     color: #fff;
 }
+
 .contact-form button:hover {
     background: rgba(0, 255, 255, 0.575);
 }
@@ -294,18 +324,22 @@ nav a:hover{
 }
 
 @keyframes animatedborder {
-    0%{
+    0% {
         border-color: cyan;
     }
+
     25% {
         border-color: blue;
     }
+
     50% {
         border-color: red;
     }
+
     75% {
         border-color: green;
     }
+
     100% {
         border-color: cyan;
     }
@@ -318,18 +352,21 @@ nav a:hover{
     border-radius: 100%;
     transition: 0.4s ease;
 }
+
 .socials a:hover li {
     box-shadow: 0 0 7px #fff;
-    background: rgba(255,255,255,.2);
+    background: rgba(255, 255, 255, .2);
 }
+
 .socials a i {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     font-size: 1.2rem;
     transition: color 0.4s ease;
 }
+
 .socials a:hover i {
     color: aqua;
 }
@@ -339,6 +376,7 @@ nav a:hover{
     margin: 0 !important;
     font-size: 16px;
 }
+
 .personal p i {
     margin-right: 5px;
 }
