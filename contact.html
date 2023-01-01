@@ -56,14 +56,22 @@
     <section class="intro">
         <div class="d-flex justify-content-center align-items-center h-100 p-3">
 
-
-            <form class="contact-form d-flex flex-column gap-3">
+            <form class="contact-form d-flex flex-column gap-3" autocomplete="off">
                 <legend class="mb-3">
                     <span>Get In Touch</span>
                 </legend>
-                <input type="text" name="name" id="name" placeholder="Full Name" required>
-                <input type="email" name="email" onkeydown="validation()" id="email" placeholder="Your Email" required>
-                <textarea name="message" rows="3" id="message" placeholder="Your Message" required></textarea>
+                <div class="d-flex flex-column p-0 m-0">
+                    <input type="text" name="name" id="name" placeholder="Full Name">
+                    <span class="name d-none p-0 ms-2 my-0 form-text text-danger text-start"></span>
+                </div>
+                <div class="d-flex flex-column p-0 m-0">
+                    <input type="email" name="email" id="email" placeholder="Your Email">
+                    <span class="email d-none p-0 ms-2 my-0 form-text text-danger text-start"></span>
+                </div>
+                <div class="d-flex flex-column p-0 m-0">
+                    <textarea name="message" rows="3" id="message" placeholder="Your Message"></textarea>
+                    <span class="message d-none p-0 ms-2 my-0 form-text text-danger text-start"></span>
+                </div>
                 <div class="w-100 mt-2">
                     <button type="submit" class="sendBtn border border-info fw-semibold">Send</button>
                 </div>

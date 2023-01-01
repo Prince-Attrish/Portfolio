@@ -277,11 +277,6 @@ nav a:hover:not(.navbar-brand) {
     resize: none;
 }
 
-.contact-form input:hover,
-.contact-form textarea:hover {
-    box-shadow: 0 1px 1px rgb(0, 255, 76);
-}
-
 .contact-form input::placeholder,
 .contact-form textarea::placeholder {
     color: #7d7d7d;
@@ -289,12 +284,7 @@ nav a:hover:not(.navbar-brand) {
 
 .contact-form input:focus,
 .contact-form textarea:focus {
-    box-shadow: 0 1px 1px red;
-}
-
-.contact-form input:valid,
-.contact-form textarea:valid {
-    box-shadow: 0 1px 1px rgb(0, 255, 76);
+    box-shadow: 0 1px 1px rgb(0, 255, 75);
 }
 
 .contact-form button {
